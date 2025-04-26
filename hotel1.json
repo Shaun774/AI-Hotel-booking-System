@@ -1,0 +1,143 @@
+[
+    {
+        "hotel_name": "Grand Ocean Resort",
+        "location": "Miami, Florida",
+        "room_type": "Deluxe Suite",
+        "amenities": [
+            "WiFi",
+            "Swimming Pool",
+            "Gym",
+            "Spa",
+            "Breakfast Included"
+        ],
+        "total_price": 1200.5,
+        "booking_confirmation_number": "GOR12345678",
+        "rooms_available": [
+            {
+                "101": {
+                    "2025-03-11 to 2025-03-16": false
+                }
+            },
+            {
+                "102": false
+            },
+            {
+                "103": true
+            }
+        ]
+    },
+    {
+        "hotel_name": "Mountain View Lodge",
+        "location": "Denver, Colorado",
+        "room_type": "King Room",
+        "amenities": [
+            "WiFi",
+            "Free Parking",
+            "Mountain View",
+            "Restaurant"
+        ],
+        "total_price": 950.75,
+        "booking_confirmation_number": "MVL87654321",
+        "rooms_available": [
+            {
+                "101": true
+            },
+            {
+                "102": {
+                    "2025-03-15 to 2025-03-20": false
+                }
+            },
+            {
+                "103": true
+            }
+        ]
+    },
+    {
+        "hotel_name": "Sunset Paradise Hotel",
+        "location": "Los Angeles, California",
+        "room_type": "Single Room",
+        "amenities": [
+            "WiFi",
+            "Air Conditioning",
+            "Fitness Center",
+            "Bar"
+        ],
+        "total_price": 720.0,
+        "booking_confirmation_number": "SPH65432109",
+        "rooms_available": [
+            {
+                "101": {
+                    "2025-03-01 to 2025-03-05": false
+                }
+            },
+            {
+                "102": {
+                    "2025-03-02 to 2025-03-03": false
+                }
+            },
+            {
+                "103": true
+            }
+        ]
+    },
+    {
+        "hotel_name": "Royal Heritage Palace",
+        "location": "Jaipur, India",
+        "room_type": "Heritage Suite",
+        "amenities": [
+            "WiFi",
+            "Traditional Decor",
+            "Swimming Pool",
+            "Free Breakfast"
+        ],
+        "total_price": 1800.0,
+        "booking_confirmation_number": "RHP09876543",
+        "rooms_available": [
+            {
+                "101": {
+                    "2025-03-12 to 2025-03-17": false
+                }
+            },
+            {
+                "102": {
+                    "2025-03-15 to 2025-03-20": false
+                }
+            },
+            {
+                "103": {
+                    "2025-03-15 to 2025-03-20": false
+                }
+            }
+        ]
+    },
+    {
+        "hotel_name": "Amrut aura",
+        "location": "Karwar, India",
+        "room_type": "Heritage Suite",
+        "amenities": [
+            "WiFi",
+            "Traditional Decor",
+            "Swimming Pool",
+            "Free Breakfast"
+        ],
+        "total_price": 1800.0,
+        "booking_confirmation_number": "RHP09876543",
+        "rooms_available": [
+            {
+                "101": {
+                    "2025-03-02 to 2025-03-03": false
+                }
+            },
+            {
+                "102": {
+                    "2025-03-02 to 2025-03-03": false
+                }
+            },
+            {
+                "103": {
+                    "2025-03-02 to 2025-03-03": true
+                }
+            }
+        ]
+    }
+]

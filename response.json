@@ -1,0 +1,52 @@
+[
+    [
+        [
+            [],
+            {
+                "user_name": "Shaun",
+                "email": "",
+                "age": 22,
+                "hotel_name": "Amrut aura",
+                "location": "Karwar, India",
+                "check_in_date": "2025-03-02",
+                "check_out_date": "2025-03-03",
+                "number_of_guests": "Unknown",
+                "room_type": "Heritage Suite",
+                "amenities": "Unknown",
+                "total_price": 1800.0,
+                "booking_confirmation_number": "RHP09876543",
+                "room_number": 101
+            }
+        ],
+        {
+            "user_name": "Shaun",
+            "email": "",
+            "age": 22,
+            "hotel_name": "Amrut aura",
+            "location": "Karwar, India",
+            "check_in_date": "2025-03-02",
+            "check_out_date": "2025-03-03",
+            "number_of_guests": "Unknown",
+            "room_type": "Heritage Suite",
+            "amenities": "Unknown",
+            "total_price": 1800.0,
+            "booking_confirmation_number": "RHP09876543",
+            "room_number": 101
+        }
+    ],
+    {
+        "user_name": "Prachi",
+        "email": "",
+        "age": 22,
+        "hotel_name": "Amrut aura",
+        "location": "Karwar, India",
+        "check_in_date": "2025-03-02",
+        "check_out_date": "2025-03-03",
+        "number_of_guests": "Unknown",
+        "room_type": "Heritage Suite",
+        "amenities": "Unknown",
+        "total_price": 1800.0,
+        "booking_confirmation_number": "RHP09876543",
+        "room_number": 102
+    }
+]

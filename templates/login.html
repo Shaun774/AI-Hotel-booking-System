@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUXE Hotels | Member Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --primary: #1a1a2e;
+      --secondary: #16213e;
+      --accent: #e94560;
+      --light: #f9f9f9;
+      --gold: #d4af37;
+      --text: #333333;
+      --text-light: #777777;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-image: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--text);
+    }
+    
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 1;
+    }
+    
+    .login-container {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      max-width: 450px;
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+      margin: 20px;
+    }
+    
+    .login-header {
+      background: var(--primary);
+      color: white;
+      padding: 30px;
+      text-align: center;
+      border-bottom: 2px solid var(--gold);
+    }
+    
+    .login-header h1 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 600;
+      font-size: 28px;
+      letter-spacing: 1px;
+      margin-bottom: 5px;
+    }
+    
+    .login-header p {
+      font-size: 14px;
+      opacity: 0.8;
+    }
+    
+    .logo {
+      font-size: 32px;
+      color: var(--gold);
+      margin-bottom: 15px;
+    }
+    
+    .login-form {
+      padding: 30px;
+    }
+    
+    .input-group {
+      position: relative;
+      margin-bottom: 25px;
+    }
+    
+    .input-group i {
+      position: absolute;
+      top: 50%;
+      left: 15px;
+      transform: translateY(-50%);
+      color: var(--text-light);
+    }
+    
+    .input-group input {
+      width: 100%;
+      padding: 15px 15px 15px 45px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-size: 16px;
+      transition: all 0.3s ease;
+      background-color: rgba(249, 249, 249, 0.7);
+    }
+    
+    .input-group input:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 2px rgba(26, 26, 46, 0.2);
+      outline: none;
+    }
+    
+    .login-btn {
+      width: 100%;
+      padding: 15px;
+      background: var(--primary);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    
+    .login-btn:hover {
+      background: var(--secondary);
+    }
+    
+    .error {
+      color: var(--accent);
+      margin-bottom: 20px;
+      padding: 10px 15px;
+      background-color: rgba(233, 69, 96, 0.1);
+      border-radius: 6px;
+      border-left: 3px solid var(--accent);
+      font-size: 14px;
+    }
+    
+    .login-footer {
+      text-align: center;
+      padding: 20px;
+      border-top: 1px solid #eee;
+      font-size: 14px;
+      color: var(--text-light);
+    }
+    
+    .login-footer a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    
+    .login-footer a:hover {
+      text-decoration: underline;
+    }
+    
+    .remember-forgot {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 25px;
+      font-size: 14px;
+    }
+    
+    .remember-me {
+      display: flex;
+      align-items: center;
+    }
+    
+    .remember-me input {
+      margin-right: 8px;
+    }
+    
+    .forgot-password a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+    
+    .forgot-password a:hover {
+      text-decoration: underline;
+    }
+    
+    /* Social login options */
+    .social-login {
+      margin-top: 30px;
+    }
+    
+    .social-login p {
+      text-align: center;
+      color: var(--text-light);
+      margin-bottom: 15px;
+      position: relative;
+    }
+    
+    .social-login p::before,
+    .social-login p::after {
+      content: "";
+      display: inline-block;
+      width: 30%;
+      height: 1px;
+      background: #ddd;
+      position: absolute;
+      top: 50%;
+    }
+    
+    .social-login p::before {
+      left: 0;
+    }
+    
+    .social-login p::after {
+      right: 0;
+    }
+    
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+    
+    .social-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    
+    .social-icon.facebook {
+      background: #3b5998;
+    }
+    
+    .social-icon.google {
+      background: #db4437;
+    }
+    
+    .social-icon.apple {
+      background: #000000;
+    }
+    
+    .social-icon:hover {
+      transform: translateY(-3px);
+    }
+    
+    @media (max-width: 480px) {
+      .login-container {
+        margin: 10px;
+      }
+      
+      .login-header {
+        padding: 20px;
+      }
+      
+      .login-form {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+  
+  <div class="login-container">
+    <div class="login-header">
+      <div class="logo">
+        <i class="fas fa-crown"></i>
+      </div>
+      <h1>LUXE Hotels</h1>
+      <p>Member Exclusive Access</p>
+    </div>
+    
+    <div class="login-form">
+      {% if error %}
+        <div class="error">
+          <i class="fas fa-exclamation-circle"></i> {{ error }}
+        </div>
+      {% endif %}
+      
+      <form method="POST">
+        <div class="input-group">
+          <i class="fas fa-user"></i>
+          <input type="text" name="username" placeholder="Username or Email" required>
+        </div>
+        
+        <div class="input-group">
+          <i class="fas fa-lock"></i>
+          <input type="password" name="password" placeholder="Password" required>
+        </div>
+        
+        <div class="remember-forgot">
+          <div class="remember-me">
+            <input type="checkbox" id="remember" name="remember">
+            <label for="remember">Remember me</label>
+          </div>
+          <div class="forgot-password">
+            <a href="#">Forgot password?</a>
+          </div>
+        </div>
+        
+        <button type="submit" class="login-btn">
+          Sign In <i class="fas fa-arrow-right"></i>
+        </button>
+      </form>
+      
+      <div class="social-login">
+        <p>Or sign in with</p>
+        <div class="social-icons">
+          <div class="social-icon facebook">
+            <i class="fab fa-facebook-f"></i>
+          </div>
+          <div class="social-icon google">
+            <i class="fab fa-google"></i>
+          </div>
+          <div class="social-icon apple">
+            <i class="fab fa-apple"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="login-footer">
+      Not a member yet? <a href="#">Join Us</a>
+    </div>
+  </div>
+</body>
+</html>

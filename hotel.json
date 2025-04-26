@@ -1,0 +1,100 @@
+[
+    {
+      "hotel_name": "Grand Ocean Resort",
+      "location": "Miami, Florida",
+      "room_type": "Deluxe Suite",
+      "amenities": ["WiFi", "Swimming Pool", "Gym", "Spa", "Breakfast Included"],
+      "total_price": 1200.50,
+      "booking_confirmation_number": "GOR12345678"
+    },
+    {
+      "hotel_name": "Mountain View Lodge",
+      "location": "Denver, Colorado",
+      "room_type": "King Room",
+      "amenities": ["WiFi", "Free Parking", "Mountain View", "Restaurant"],
+      "total_price": 950.75,
+      "booking_confirmation_number": "MVL87654321"
+    },
+    {
+      "hotel_name": "Sunset Paradise Hotel",
+      "location": "Los Angeles, California",
+      "room_type": "Single Room",
+      "amenities": ["WiFi", "Air Conditioning", "Fitness Center", "Bar"],
+      "total_price": 720.00,
+      "booking_confirmation_number": "SPH65432109"
+    },
+    {
+      "hotel_name": "Royal Heritage Palace",
+      "location": "Jaipur, India",
+      "room_type": "Heritage Suite",
+      "amenities": ["WiFi", "Traditional Decor", "Swimming Pool", "Free Breakfast"],
+      "total_price": 1800.00,
+      "booking_confirmation_number": "RHP09876543"
+    },
+    {
+      "hotel_name": "Blue Lagoon Resort",
+      "location": "Maldives",
+      "room_type": "Overwater Bungalow",
+      "amenities": ["WiFi", "Private Pool", "Snorkeling", "All Meals Included"],
+      "total_price": 5000.00,
+      "booking_confirmation_number": "BLR56789012"
+    },
+    {
+      "hotel_name": "Skyline Towers",
+      "location": "New York City, USA",
+      "room_type": "Penthouse Suite",
+      "amenities": ["WiFi", "City View", "Mini Bar", "24/7 Room Service"],
+      "total_price": 3500.00,
+      "booking_confirmation_number": "ST98765432"
+    },
+    {
+      "hotel_name": "Tropical Breeze Inn",
+      "location": "Bali, Indonesia",
+      "room_type": "Family Cottage",
+      "amenities": ["WiFi", "Beach Access", "Yoga Sessions", "Airport Pickup"],
+      "total_price": 1400.00,
+      "booking_confirmation_number": "TBI45678901"
+    },
+    {
+      "hotel_name": "Eiffel View Hotel",
+      "location": "Paris, France",
+      "room_type": "Luxury Suite",
+      "amenities": ["WiFi", "Eiffel Tower View", "Fine Dining", "Concierge Service"],
+      "total_price": 2800.00,
+      "booking_confirmation_number": "EVH12345678"
+    },
+    {
+      "hotel_name": "Desert Mirage Resort",
+      "location": "Dubai, UAE",
+      "room_type": "Royal Villa",
+      "amenities": ["WiFi", "Private Beach", "Camel Rides", "Spa"],
+      "total_price": 6000.00,
+      "booking_confirmation_number": "DMR98765432"
+    },
+    {
+      "hotel_name": "Northern Lights Lodge",
+      "location": "Reykjavik, Iceland",
+      "room_type": "Aurora Cabin",
+      "amenities": ["WiFi", "Glass Roof for Aurora Viewing", "Hot Springs", "Guided Tours"],
+      "total_price": 2200.00,
+      "booking_confirmation_number": "NLL65432109"
+    },
+    {
+      "hotel_name": "Hugs",
+      "location": "Majali, Karwar, India",
+      "room_type": "Single Room",
+      "amenities": ["WiFi", "Glass Roof for Aurora Viewing", "Hot Springs", "Guided Tours"],
+      "total_price": 500,
+      "booking_confirmation_number": "NLL65432109"
+    },
+    {
+      "hotel_name": "Deepti's Cafe",
+      "location": "Majali, Karwar, India",
+      "room_type": "Single Room",
+      "amenities": ["WiFi", "Glass Roof for Aurora Viewing", "Hot Springs", "Guided Tours","Carrom"],
+      "total_price": 500,
+      "booking_confirmation_number": "NLL65432109"
+    }
+    
+  ]
+  
